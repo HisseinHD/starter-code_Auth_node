@@ -6,7 +6,7 @@
 ![JWT](https://img.shields.io/badge/JWT-Auth-orange)
 ![CI/CD](https://img.shields.io/badge/CI/CD-GitHub_Actions-blue)
 
-**Formation professionnel** pour système d'authentification Node.js/Express avec MongoDB, développé dans le cadre de la formation **Développeur Web et Mobile** par [WenakLabs](https://www.wenaklabs.org) et [Simplon Africa](https://africa.simplon.co).
+**Briefs** pour système d'authentification Node.js/Express avec MongoDB, développé dans le cadre de la formation **Développeur Web et Mobile** par [WenakLabs](https://www.wenaklabs.org) et [Simplon Africa](https://africa.simplon.co).
 
 ## ✨ Fonctionnalités Clés
 
