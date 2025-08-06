@@ -181,7 +181,7 @@ const login = async (req, res) => {
 // Delete User
 const deleteUser = async (req, res) => {
   try {
-    const userId = req.userData.userId;
+    const userId = req.user._id;
     const { password } = req.body;
 
     // Vérifier que l'utilisateur existe
@@ -222,7 +222,7 @@ const updatePassword = async (req, res) => {
     }
 
     const { oldPassword, newPassword } = req.body;
-    const userId = req.userData.userId;
+    const userId = req.user._id;
 
     // Validation des mots de passe
     if (newPassword.length < 8) {
@@ -347,7 +347,7 @@ const resetPassword = async (req, res) => {
 // Get User Profile
 const getProfile = async (req, res) => {
   try {
-    const userId = req.userData.userId;
+    const userId = req.user._id;   
     const user = await userModel.findById(userId).select("-password");
 
     if (!user) {
@@ -369,7 +369,7 @@ const getProfile = async (req, res) => {
 // Update Profile
 const updateProfile = async (req, res) => {
   try {
-    const userId = req.userData.userId;
+    const userId = req.user._id;
     const { name, email } = req.body;
 
     const user = await userModel
